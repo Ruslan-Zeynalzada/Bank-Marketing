@@ -3,3 +3,4 @@ pandas==1.4.1
 streamlit==1.10.0
 scikit_learn==1.1.1
 Pillow==9.1.1
+xgboost==1.5.1
