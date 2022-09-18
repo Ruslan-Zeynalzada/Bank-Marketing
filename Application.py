@@ -101,7 +101,6 @@ Duration = st.sidebar.slider(label = "Please select input for Duration group var
 Campaign = st.sidebar.slider(label = "Please select input for Campaign group variable" , max_value = 63 , min_value = 1 , value = 1)
 Pdays = st.sidebar.slider(label = "Please select input for Pdays group variable" , max_value = 871 , min_value = -1 , value = -1)
 Previous = st.sidebar.slider(label = "Please select input for Previous group variable" , max_value = 275 , min_value = 0 , value = 0)
-Response = st.sidebar.radio(label = "Please select input for Response variable (0 = No , 1 = Yes)" , options = [0 , 1])
 
 btn_3 = st.sidebar.button("Predict")
 
@@ -109,7 +108,7 @@ btn_3 = st.sidebar.button("Predict")
 st.header("You have selected these inputs")
 
 data_test = pd.DataFrame(data = {"Age" : [Age] , "Age group" : [Age_group] , "Eligible" : [Eligible] , "Job" : [Job] , "Salary" : [Salary], 
-                                "Marital" : [Marital] , "Education" : [Education] , "Marital-education" : [Marital_education] , "Targeted" : [Targeted] , "Default" : [Default] , "Balance" : [Balance] , "Housing" : [Housing] , "Loan" : [Loan] ,"Contact" : [Contact], "Day" : [Day] , "Month" : [Month] , "Duration" : 	[Duration] , "Campaign" : [Campaign], "Pdays" : [Pdays] , "Previous" : [Previous] , "Response" : [Response]})
+                                "Marital" : [Marital] , "Education" : [Education] , "Marital-education" : [Marital_education] , "Targeted" : [Targeted] , "Default" : [Default] , "Balance" : [Balance] , "Housing" : [Housing] , "Loan" : [Loan] ,"Contact" : [Contact], "Day" : [Day] , "Month" : [Month] , "Duration" : 	[Duration] , "Campaign" : [Campaign], "Pdays" : [Pdays] , "Previous" : [Previous]})
 
 st.write(data_test.head())
 
