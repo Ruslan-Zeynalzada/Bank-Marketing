@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import pickle
-
+from xgboost import XGBClassifier
 
 st.title("The Bank Marketing Project")
 st.markdown("* **First you have to enter values for the variable on the left side**")
